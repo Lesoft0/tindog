@@ -5,6 +5,12 @@
     --fourth-color: #8f8f8f;
 }
 
+#cta {
+    background-color: var(--first-color);
+    color: var(--third-color);
+    text-align: center;
+}
+
 #features {
     background-color: var(--third-color);
     display: block;
@@ -15,6 +21,11 @@
     width: 80%;
 }   
 
+#footer {
+    background-color: var(--third-color);
+    text-align: center;
+}
+
 #press {
     background-color: var(--second-color);
     padding-bottom: 3%;
@@ -23,6 +34,7 @@
 
 #pricing {
     padding: 3rem 5.5rem;
+    text-align: center;
 }
 
 #title {
@@ -44,8 +56,17 @@
     padding: 7% 10%;
 }
 
+.cta-elements {
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1.6;
+    margin: auto;
+    padding: 4rem 0 0 0;
+    width: 65%;
+}
+
 .download-button {
-    margin: 5% 0 5% 0;
+    margin: 6% 1.5% 10%;
 }
 
 .icons {
@@ -88,6 +109,10 @@
     text-align: center;
 }
 
+.social-icons {
+    margin: 9% 1% 2%;
+}
+
 .testimonial-image {
     border-radius: 100%;  /*  Makes image into a circle  */
     margin: 1.5rem;
@@ -126,4 +151,15 @@ h3 {
 
 p { 
     color: var(--fourth-color);
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);  /* rotate uses absolute, not relative degrees */
+    }
 }
