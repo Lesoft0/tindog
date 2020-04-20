@@ -5,10 +5,9 @@
     --fourth-color: #8f8f8f;
 }
 
-#cta {
+#cta, #title {
     background-color: var(--first-color);
     color: var(--third-color);
-    text-align: center;
 }
 
 #features {
@@ -17,35 +16,25 @@
     margin: 0 auto;
     padding: 6rem 0;
     position: relative;
-    text-align: center;
     width: 80%;
 }   
 
 #footer {
     background-color: var(--third-color);
-    text-align: center;
 }
 
 #press {
     background-color: var(--second-color);
     padding-bottom: 3%;
-    text-align: center;
 }
 
 #pricing {
     padding: 3rem 5.5rem;
-    text-align: center;
-}
-
-#title {
-    background-color: var(--first-color);
-    color: var(--third-color);
 }
 
 #testimonials {
     background-color: var(--second-color);
     color: var(--third-color);
-    text-align: center;
 }
 
 .container-fluid {
@@ -94,7 +83,6 @@
 }
 
 .nav-link {
-    font-family: "Montserrat";
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -106,7 +94,6 @@
 
 .pricing-column {
     padding: 3% 2%;
-    text-align: center;
 }
 
 .social-icons {
@@ -129,12 +116,14 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 h1 {
     font-size: 2.2rem;
     font-weight: 900;
     line-height: 1.5;
+    text-align: left;
 }
 
 h2 {
@@ -146,7 +135,6 @@ h2 {
 h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    text-align: center;
 }
 
 p { 
@@ -154,10 +142,6 @@ p {
 }
 
 @media (max-width: 1028px) {
-    #title {
-        text-align: center;
-    }
-
     .title-image {
         position: static;
         transform: rotate(0);  /* rotate uses absolute, not relative degrees */
